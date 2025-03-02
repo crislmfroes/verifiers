@@ -40,7 +40,7 @@ class GRPOEnvTrainer(GRPOTrainer):
             processing_class: Optional[PreTrainedTokenizerBase] = None,
             callbacks: Optional[list[TrainerCallback]] = None,
             optimizers: tuple[Optional[torch.optim.Optimizer], Optional[torch.optim.lr_scheduler.LambdaLR]] = (None, None),
-            peft_config: Optional["PeftConfig"] = None,
+            peft_config = None,
             **kwargs,
     ):
         if not args.use_vllm: # type: ignore
