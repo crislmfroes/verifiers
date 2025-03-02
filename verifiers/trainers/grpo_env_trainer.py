@@ -55,8 +55,8 @@ class GRPOEnvTrainer(GRPOTrainer):
             eval_dataset=eval_dataset,
             processing_class=processing_class,
             callbacks=callbacks,
-            optimizers=optimizers,
-            peft_config=peft_config,
+            #optimizers=optimizers,
+            #peft_config=peft_config,
             **kwargs,
         )
         self.env = env
