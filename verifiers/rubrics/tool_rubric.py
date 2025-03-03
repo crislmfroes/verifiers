@@ -5,7 +5,7 @@ from verifiers.rubrics import Rubric
 
 class ToolRubric(Rubric):
     def __init__(self,
-                 parser: XMLParser = XMLParser(fields=["reasoning", ("tool", "answer")]),
+                 parser: XMLParser = XMLParser(fields=["reasoning", "tool", "answer"]),
                  env_parser: XMLParser = XMLParser(fields=["result"])):
         self.parser = parser
         self.env_parser = env_parser
